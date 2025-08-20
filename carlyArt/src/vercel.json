@@ -1,6 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install --production=false",
-  "outputDirectory": "dist",
-  "framework": "vite"
+  "installCommand": "npm install",
+  "outputDirectory": "dist"
 }
