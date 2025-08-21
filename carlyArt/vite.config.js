@@ -9,9 +9,15 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     vue(),
+    
     // vueDevTools(),
     tailwindcss(),
+    
   ],
+   root: '.',        // make sure it looks in project root for index.html
+  build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
